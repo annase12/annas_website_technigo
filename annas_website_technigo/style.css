@@ -1,0 +1,102 @@
+
+/* Här ändrade jag textfärgen på rubrik 1. */
+h1 {
+  color: blue;
+}
+
+
+/* Här har jag lagt på en färg för själva bodyn på hemsidan */
+body{
+background: lightgrey;	
+}
+
+/* I wrappern har jag gjort så att det blir lite mellanrum mellan kanten av wrappern
+ och bodyn. Den är även 90% stor av hela hemsidan. Jag har lagt till en grå kant. */
+#wrapper{
+	width: 90%;
+	background: white;	
+	margin: 0 auto;
+	border: 2px grey solid;
+	padding: 5px;
+}
+
+/* I headern lade jag till färg och andra egenskaper på kantlinjen ovan och nedanför som omger headern. */
+#header{
+	width: 100%;
+	background-color: white;
+	border-color: gray;
+	border-style: solid;
+	border-width: 2px;
+	border-left: 0;
+	border-right: 0;
+}
+
+/* La till en färg där content står. Denna syns bara i html-filen kontakt. */
+#content{
+	background-color: pink;
+	}
+
+
+.text1 {
+	color: #057d08;
+	font-size: 16px;
+	text-align: center;
+}
+
+/* Jag gav p storleken 20px. Denna ändras i min stilmall för rwd. */
+p{
+	font-size: 20px;
+}
+
+/* Här har jag lagt till lite egenskaper (storlek osv) på texten och listan. 
+Jag har även centrerat menyn. */
+.menu{
+	font-family: avenir, arial, helvetica, sans-serif;
+	font-size: 40px;
+	text-align: center;
+}
+
+/* Inline innebär att menyn ska ligga på en rad, inte nedanför varandra. 
+Punkterna är även borttagna. Padding gör så att det skapas mer mellanrum och luft mellan
+orden. */
+.menu li{ 
+	display: inline;
+	color: #fff;
+	padding:10px;	
+}
+
+
+/*link innebär ett element som man ej besökt (unvisited link) som har en href till sig. 
+Utan denna skulle det synas att man besökt en länk i form av understrukning. */
+a:link{
+	text-decoration: none;
+}
+
+/* Hover innebär när man för muspekaren över länken 
+och nedan säger jag att jag då vill att en understrykning 
+ska synas när man för muspekaren över länken.*/
+a:hover{
+	text-decoration: underline;	
+}
+
+/* Nedan är till för att hjälpa besökaren på hemsidan att se skillnad på länkar denne har besökt
+genom att den besökta länken (anchor) blir unik. Här har jag valt att ge besökta länkar färgen svart (för att det var snyggast så:).  */
+a:visited {
+    color: black;
+}
+
+/* Här har jag ändrat färgen på bakgrunden i footern och jag har även anpassat avståndet på footern med texten. */
+#footer{
+	background: lightblue;
+	height: 100px;
+	padding: 0 10px 0 10px; /* Att man skriver dessa på rad innebär att man inkluderar
+	alla sidor (vänster, höger, toppen, botten). 
+	Padding är mellanrummet mellan border och content, alltså texten och ytterkanten.
+	Margin är också något man använder när man vill ändra avstånd men margin används mer
+	till att ändra avståndet ytterkant och andra element. */
+	padding-top: 10px;
+}
+
+
+
+

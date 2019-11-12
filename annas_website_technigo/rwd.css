@@ -1,0 +1,62 @@
+/* Här är min kod för responsiva delen av hemsidan, tyvärr har jag inte fått hela delen att funka som jag vill. Fotona och loggon (h1)
+verkar vara responsiva men listan och paragraferna ser inte så bra ut.*/
+
+/* Här nedan har jag definierat att denna CSS ska gälla om storleken på webläsaren är upp till 1024px. Om en kod inte är kommenterad så gäller det vanliga CSS:en. Detta är dvs tillägg.*/
+@media handheld and (max-width: 1024px),
+	screen and (max-device-width: 1024px),
+	screen and (max-width: 1024px) {
+	
+/* Jag minskar wrappern bredd till 95%. */
+	#wrapper{
+		width: 95%;
+		margin: 15px;
+	}	
+
+
+/* Nya egenskaper till min logga. Jag vill att loggan ska hamna i mitten när fönstret blir mindre. */
+	#logo{
+		text-align: center;
+	}
+	
+/* Ger rubriken en ny storlek.*/
+	h1{
+		font-size: 25px;	
+	}
+	
+	p{
+		font-size: 12px;
+		}
+
+/* Här är ändringar när storleken på websidan är max 480px bred. */
+@media handheld and (max-width: 480px),
+       screen and (max-device-width: 480px),
+       screen and (max-width: 600px) {
+       	
+/* Jag har en padding på 5px. */
+	body{
+	padding: 5px;		
+	}
+
+	 #wrapper{
+    	width: inherit;	
+    	background-color: lightgray;
+    	border: none;
+    }
+
+    p{
+		text-align: center;
+		}
+    
+
+
+/* Här är undersidans bilder definierade med egenskaper.*/
+	.desktop{
+		width: 100%;
+		position: relative;
+		left: -10px;	
+	}
+	
+
+
+
+
